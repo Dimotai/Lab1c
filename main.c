@@ -3,9 +3,9 @@
 
 int main(void) {
   double temp;
-  printf("Enter temperature in celsius: \n");
+  printf("Enter temperature in celsius: ");
   scanf("%lf", &temp); 
   double ftemp = (temp*9/5)+32;
-  printf("%lf° in Celsius is equivalent to %lf° Fahrenheit.", temp, ftemp);
+  printf("%lf° in Celsius is equivalent to %lf° Fahrenheit.\n", temp, ftemp);
   return 0;
 }
