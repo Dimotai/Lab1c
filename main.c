@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <readline/readline.h>
+#include <stdlib.h>
 
 int main(void) {
-  double temp;
-  printf("Enter temperature in celsius:\n");
-  scanf("%lf", &temp); 
-  double ftemp = (temp*9/5)+32;
-  printf("%lf° in Celsius is equivalent to %lf° Fahrenheit.", temp, ftemp);
+  char * temp = readline("Enter temperature in celsius: ");
+  double ftemp = atof(temp);
+  double ctemp = (ftemp*9/5)+32;
+  printf("%lf° in Celsius is equivalent to %f° Fahrenheit.", ftemp, ctemp);
   return 0;
 }
